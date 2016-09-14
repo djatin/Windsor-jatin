@@ -52,6 +52,11 @@
     
 .navigation .menu li {
     display: table-cell;
+    position: relative;
+    white-space: nowrap;
+    .menu li{
+        display: block;
+    }
 }
     
 //Submenu -------------------
@@ -69,6 +74,7 @@
     right: 0;
     width: 100%;
     z-index: @zindex-nav;
+    min-width: 22.5em;
 }
  
 // Coloring 
