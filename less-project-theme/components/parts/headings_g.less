@@ -21,7 +21,7 @@
 
 .title {
      //.kilo(); // total height 2.5 x baseline
-    font-weight: 300;    
+    font-weight: 500;    
 }
 /*.d-section--style-1 .title{
     font-weight: 300;
@@ -30,16 +30,24 @@
 .subtitle {
     .gamma ();
     .letterspacing120();
+}
+.title, .subtitle{
+    color: @titlecolor;
 } 
 
-.d-section--style-1 {
+.d-section--text {
     .title{
-        color: #3e78bc;
+        //color: #3e78bc;
     }
     .subtitle{
         font-weight: 300;
         margin-top: 0;
-        color: #3e78bc;
+        //color: #3e78bc;
+    }
+}
+.d-section--style-banner{
+    .title, .subtitle{
+        color: @white;
     }
 }
 

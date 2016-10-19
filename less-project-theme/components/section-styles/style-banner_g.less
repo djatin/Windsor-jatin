@@ -34,7 +34,6 @@
 .d-section--style-banner {
         margin: 0;
         padding: 0;
-
         .clearfix(); 
         overflow: hidden; // hide everyting outside this
         
@@ -43,7 +42,7 @@
 
 .o-splash {
     margin-bottom: 1px;
-    color: @white;
+    color: @titlecolor;
     background: @basecolor;  
     text-align: center;
 }
@@ -74,6 +73,12 @@
 // Typography 
 .title--splash {
     margin-top: 0;
+}
+
+.d-section--style-banner{
+    .o-splash__text{
+        color: @white;
+    }
 }
 
 
