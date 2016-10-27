@@ -21,7 +21,7 @@
 
 
 // 768 major layout change to navigation ========================
-.min-width(48em; {
+.min-width(60em; {
 
 /* Menu toggle ---------------------------- */
 // this is the menu button to link to nav on very small devices or when there is no js on small devices
@@ -34,7 +34,7 @@
 .navigation {
         width: 100%;
         position: absolute;
-        top: 10.75em;
+        top: 8em;
         z-index: @zindex-nav;
 }
     
@@ -70,7 +70,7 @@
 .panel > .menu { 
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 1em;
     right: 0;
     width: 100%;
     z-index: @zindex-nav;
@@ -78,10 +78,20 @@
 }
  
 // Coloring 
-.menu__panel ul {
-    background: darken(@basecolor, 10%);
-        
-}   
+    .menu__panel{ 
+        &:first-child ul {
+            background: #a5c243;  
+        } 
+        &:nth-child(2) ul {
+            background: #c17eb7;  
+        } 
+        &:nth-child(3) ul {
+            background: #e1d53e;  
+        } 
+        &:last-child ul {
+            background: #a6dff6;  
+        }
+    }
     
 .menu__panel ul a {
    color: @whiteonblack;
@@ -94,23 +104,82 @@
 // global navigation -------------------
     
 .navigation__global-nav > .menu {
-    .one-half();
+    //.one-half();
+    float: right;
+    margin-top: -4em;
+    li:first-child:hover a, li:first-child.active-trail a{
+        border-bottom-color: #a5c243;
+    }
+    li:nth-child(2):hover a, li:nth-child(2).active-trail a{
+        border-bottom-color: #c17eb7;
+    }
+    li:nth-child(3):hover a, li:nth-child(3).active-trail a{
+        border-bottom-color: #e1d53e;
+    }
+    li:last-child:hover a, li:last-child.active-trail a{
+        border-bottom-color: #a6dff6;
+    }
 }
     
 // utility navigation -------------------
 .navigation__utility-nav {
     position: absolute;
-    top: -9.25em;
+    top: -7em;
     right: 0;
 }
 
 .navigation__utility-nav > .menu {
     .one-whole();
 }
-
-//end 768 major
+.utility-nav li.active a, .utility-nav li:hover a{
+    border-bottom-color: #335f91;
+}
+/*.utility-nav li.active + li.active a{
+    border-bottom-color: transparent;
+}*/
+// Submenu -------------------
+.menu .menu a {
+    padding: 0.25em 1em;
+    margin: 0 !important;
+    border-bottom: none;
+}
+    
+    
+//end 960 major
 });
+.min-width-max(.1em{
+    .menu{
+        a{
+            margin: 0 .5em !important;
+        }
+        .menu a{
+            font-weight: normal;
+            padding-left: 1em;
+        }
+    }
+    .utility-nav a{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.43357143em;         
+    }
+}59.999em);
 
+
+.navigation__global-nav > .menu {
+    li{
+        a, span{
+            margin: 0 1.25em;
+            .min-width-max(60em{
+                margin: 0 .25em;
+            }71.22em);
+        }
+        &:last-child{
+            a, span{
+                margin-right: 0;
+            }
+        }
+    }
+}
 // Media Queries for component in situ 
 // navigation menu --------------------------------
 

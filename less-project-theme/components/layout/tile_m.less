@@ -61,9 +61,26 @@
         
     });
 }
-
 // SITE SPECIFIC TWEAKS =================================================== 
 
+.d-feed--style-1{
+    .o-tile{
+        .min-width(40em{
+            border-right: 1px solid #ccc;
+            &:nth-child(2n), &:last-child{
+                border-right: none;
+            }     
+        });
+        .min-width(60em{
+            &:nth-child(2n){
+                border-right: 1px solid #ccc;
+            }     
+            &:nth-child(3n){
+                border-right: none;
+            }            
+        });
+    }
+}
 
 
 

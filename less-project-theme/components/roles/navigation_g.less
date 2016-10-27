@@ -65,39 +65,49 @@
 }
 
 
-.menu a, .menu span {
-    display: block;
-    padding: 1.25em;
-    font-size: 1em;
-    text-decoration: none;
-    &:active, &:focus {
-        outline: 0;
+.menu{
+    a, span{
+        display: block;
+        padding: 0.25em;
+        margin: 0 .75em 0 0;
+        font-size: 1.07142857em;
+        color: @menulinkcolor;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        /*&:active, &:focus {
+            outline: 0;
+        }
+        &:active, &:focus, &.active, &.is-active {
+            background: darken(@basecolor, 10%);
+            color: @white;
+        }
+        &:hover {        
+            background: @basecolor;
+            color: @whiteonblack;
+        }*/
     }
-    &:active, &:focus, &.active, &.is-active {
-        background: darken(@basecolor, 10%);
-        color: @white;
+    li:last-child{
+        a, span{
+            margin-right: 0;
+        }
     }
-    &:hover {        
-        background: @basecolor;
-        color: @whiteonblack;
-    }
-    
 }
 
-// Submenu -------------------
-.menu .menu a {
-       padding-left: 2em;
-}
 
 // both 
 .global-nav a, .global-nav span, .utility-nav a {
     font-family: inherit;
     .letterspacing60();
 }
+.utility-nav a{
+    font-weight: 300;
+}
 
 // global navigation -------------------
 .global-nav a, .global-nav span {
     text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.43357143em; 
 }
 
 // utility navigation -------------------

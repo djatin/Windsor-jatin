@@ -53,8 +53,14 @@
         // 1px/0.0625em
         .min-width(0.0625em; {
             background-image: url('../img/skin/logo/WLT_logo.png'); 
-            //background-size: @siteLogoWidth @siteLogoHeight;
+            background-repeat: no-repeat;
         });
+        .min-width(30em{
+            background-size: @siteLogoWidth @siteLogoHeight;
+        });
+        .min-width-max(0.1em{
+            background-size: 12.313em 7.25em;
+        }29.999em);
    }
     // if svg use the svg of the logo
     .svg .logo__link {
