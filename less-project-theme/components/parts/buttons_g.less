@@ -15,7 +15,9 @@
 */
 
 .o-btn {
-    margin-top: 2.25em;   
+    margin-top: 2.25em; 
+    font-size: .885625em;
+    font-family: 'helvatica_neue_bold';
 }
 
 // drop the focus safe to do as we have a focus 
@@ -111,6 +113,12 @@ background-color : darken(@btnbackgroundcolor, 2%);
     margin-top: 0;
 }
 
-
+.d-section--style-feed .wrapper--max-w > .o-btn a{
+    background-color: transparent;
+    color: #6f96c2;
+    &:hover{
+        color: lighten(#6f96c2, 10%);
+    }
+}
 
 

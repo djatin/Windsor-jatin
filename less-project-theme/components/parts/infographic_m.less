@@ -43,7 +43,9 @@ infographic__figcaption (wrapper for the text)
 //}
 
 /* Infographic wrapper ------------------- */
-
+.section__figure-group{
+    .clearfix();
+}
 .section__figure-group > figure {
     // 640px/40em
 	.min-width(40em; {
@@ -64,7 +66,7 @@ infographic__figcaption (wrapper for the text)
 .section__figure-group[class*='--3'] {
     // 832px/48em
 	.min-width(52em; {
-        display: table;
+        //display: table;
 	});
 }
 
@@ -91,14 +93,19 @@ infographic__figcaption (wrapper for the text)
 
 .section__figure-group[class*='--3'] figure {
     // 832px/48em
+    margin-top: 0;
 	.min-width(52em; {
-        display: table-cell;
+        //display: table-cell;
+        padding: 0;
+        float: left;
+        border-right: 1px solid #9e9e9e;
         .one-third();
         &:first-child {
             padding-left: 0;
         }
         &:last-child {
             padding-right: 0;
+            border-right: none;
         }
     });
 }
@@ -116,6 +123,5 @@ infographic__figcaption (wrapper for the text)
         }
     });
 }
-
 
 // Media Queries for component in situ
