@@ -66,7 +66,7 @@
 .d-feed--style-1{
     .o-tile{
         position: relative;
-        padding: 0 0.799em;
+        margin: 0 1% .95% 0;
         min-height: 11em;
         .o-tile__item{
             max-height: 14.063em;
@@ -74,8 +74,10 @@
         .o-tile__body{
             top: 0;
             position: absolute;
-            width: 93%;
+            width: 100%;
             height: 100%;
+            background: fade(@black, 60%);
+            color: @white;
         }
         .o-btn{
             position: absolute;
@@ -83,12 +85,29 @@
             padding: 1.5em 1.5em 0;
             bottom: 0;
         }
-        .min-width(40em{
-            
+        .min-width(60em{
+            max-width: 32.64% !important;
+            &:nth-child(3n){
+                margin-right: 0;
+            }
         });
+        .min-width-max(40em{
+            max-width: 48.64% !important;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+        }59.999em);
     }
 }
 
+.slick-slider{
+    .o-tile__item{
+        //max-height: 9em;
+    }
+    .o-btn{
+        margin-top: 0;
+    }
+}
 
 
 

@@ -24,8 +24,10 @@
         }
         .the-measure{
             max-width: 100%;
-            column-count: 2;
-            column-gap: 2em;
+            .min-width(40em{
+                column-count: 2;
+                column-gap: 2em;
+            });
             p:first-child{
                 margin-top: 0;
             }

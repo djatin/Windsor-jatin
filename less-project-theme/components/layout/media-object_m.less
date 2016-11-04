@@ -75,11 +75,6 @@
         float: none;
     }
     
-    .d-section--quotation-left, .d-section--quotation-right{
-        .o-media__item{
-            .one-fifth();
-        }
-    }
     .d-section--quotation-right .o-media__item{
         margin-right: 0;
         margin-left: @gutter;
@@ -105,6 +100,17 @@
 // SITE SPECIFIC TWEAKS =================================================== 
 
 
+.d-section--gallery .o-media__item{
+    margin-bottom: 1em;
+    .min-width(48em{
+        width: 62.5%;
+    });
+}
 
 
-
+.d-section--quotation-left, .d-section--quotation-right{
+    .o-media__item{
+        .one-fifth();
+        margin: auto;
+    }
+}
