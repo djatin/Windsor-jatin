@@ -65,19 +65,26 @@
 
 .d-feed--style-1{
     .o-tile{
+        position: relative;
+        padding: 0 0.799em;
+        min-height: 11em;
+        .o-tile__item{
+            max-height: 14.063em;
+        }
+        .o-tile__body{
+            top: 0;
+            position: absolute;
+            width: 93%;
+            height: 100%;
+        }
+        .o-btn{
+            position: absolute;
+            width: 93%;
+            padding: 1.5em 1.5em 0;
+            bottom: 0;
+        }
         .min-width(40em{
-            border-right: 1px solid #ccc;
-            &:nth-child(2n), &:last-child{
-                border-right: none;
-            }     
-        });
-        .min-width(60em{
-            &:nth-child(2n){
-                border-right: 1px solid #ccc;
-            }     
-            &:nth-child(3n){
-                border-right: none;
-            }            
+            
         });
     }
 }

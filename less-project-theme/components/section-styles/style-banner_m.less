@@ -149,6 +149,7 @@
         // make the wrapper site infront of the anchor image
         position: relative;
         z-index: @zindex-simple--front;
+        text-align: left;
     }
     
     .o-splash__anchor img {
@@ -157,9 +158,26 @@
         max-width: none;  
         height: 100%;
     }
-    
-    
-    
+    .o-splash__hgroup{
+        max-width: 22.1em;
+    }
+    .o-splash__text{
+        max-width: 22em;
+    }
+    .o-splash__btn{
+        max-width: 24.7em;
+    }
+    .d-section--alignment-right .o-splash__hgroup, .d-section--alignment-right .o-splash__btn{
+        margin-left: auto;
+    }
+    .d-section--banner-with-nice-icon .o-splash__icon{
+        width: 7em;
+    }
+    .d-section--banner-with-nice-icon .o-splash__hgroup{
+        max-width: 13em;
+        margin-right: 9em;
+        margin-top: -5em;
+    }
 });
 
 

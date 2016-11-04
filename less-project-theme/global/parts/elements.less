@@ -76,10 +76,11 @@ blockquote {
     margin: 2.30769230769231em 0 1.38461538461538em;
     .beta ();
     .letterspacing60();
-    font-family: @fall-back--serif;
-    font-style: italic;
+    /*font-family: @fall-back--serif;
+    font-style: italic;*/
     clear: both;
     text-align: left;
+    position: relative;
     /* Text */
     p {
         font-size: inherit !important;
@@ -93,7 +94,8 @@ blockquote {
         margin-left: -1em;
         line-height: 1;
         font-weight: 700;
-        position: relative;
+        position: absolute;
+        //position: relative;
         top: 1em;
     }
 }
@@ -238,4 +240,10 @@ cite {
 
 .vcard .tel, .vcard .email {
     margin: 0;
+}
+
+.d-section--style-media{
+      figure, blockquote{
+        margin-top: 0;
+    }
 }

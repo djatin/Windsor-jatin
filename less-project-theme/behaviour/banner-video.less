@@ -29,10 +29,11 @@
 
 .js-play-btn {
     margin:.75em auto;
-    height:6em;
-    width:6em;
-    border:6px solid #fff;
-    .rounded(6em);
+    height:7em;
+    width:7em;
+    //border:6px solid #fff;
+    border:none;
+    //.rounded(6em);
     opacity: 0.7;
     &:hover {
         opacity: 0.9;
@@ -44,16 +45,31 @@
 
 .js-play-btn__icon{
     display:block;
-    margin:-24px 0 0 -14px;
+    margin:-49px 0 0 -43px;
     width:0;
     height:0;
-    border-top:24px solid transparent;
-    border-bottom:24px solid transparent;
-    border-left:36px solid #fff;
+    transform: rotate(-18deg);
+    border-top:43px solid transparent;
+    border-bottom:28px solid transparent;
+    border-left:90px solid rgba(255, 255, 255, 0.29);
     position:absolute;
     top:50%;
     left:50%;
-    
+    &:after{
+        content: 'Play';
+        color: #fff;
+        display: block;
+        left: 0;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        height: 18px;
+        width: 35px;
+        transform: rotate(18deg);
+        letter-spacing: 2px;
+        margin-left: -80px;
+        margin-top: -14px;
+        font-weight: 100;
+    }
 }
 
 .js-close-btn{
@@ -207,9 +223,13 @@
     .min-width(40em {
         margin: -3em 0 0 -3em;
         position: absolute;
-        top: 33.33333333333333%;
+        top: 47.33333333333333%;
         left: 50%;
         z-index: @zindex-overlay;
     });
         
+}
+
+.js-splash-video__wrapper{
+    .visually-hidden();
 }

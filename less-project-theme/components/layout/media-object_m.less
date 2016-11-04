@@ -70,11 +70,21 @@
     }
     
     .d-section--alignment-center .o-media__item {
-           margin-left: auto;
-           margin-right: auto;
-            float: none;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
     }
     
+    .d-section--quotation-left, .d-section--quotation-right{
+        .o-media__item{
+            .one-fifth();
+        }
+    }
+    .d-section--quotation-right .o-media__item{
+        margin-right: 0;
+        margin-left: @gutter;
+        float: right;
+    }
 });
 
 
