@@ -56,7 +56,7 @@
     .min-width(40em {
         //-ms-flex: auto; 
         -ms-flex: 1 1 auto;/* IE 10 */
-        -webkit-flex: auto;       /* Safari 6.1+. iOS 7.1+, BB10 */
+        -webkit-flex: auto;/* Safari 6.1+. iOS 7.1+, BB10 */
         flex: auto;
         
     });
@@ -68,6 +68,13 @@
         position: relative;
         margin: 0 1% .95% 0;
         min-height: 11em;
+        .o-tile__title {
+            margin-top: 1.5em;
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+        }
         .o-tile__item{
             max-height: 14.063em;
         }
@@ -81,9 +88,9 @@
         }
         .o-btn{
             position: absolute;
-            width: 93%;
+            width: 100%;
             padding: 1.5em 1.5em 0;
-            bottom: 0;
+            bottom: 2em;
         }
         .min-width(60em{
             max-width: 32.64% !important;

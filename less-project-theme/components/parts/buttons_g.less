@@ -83,11 +83,10 @@ background-color : darken(@btnbackgroundcolor, 2%);
 
 // Ghost
 .btn--style-2 a {
-    border: 2px solid @grey;
-    color: @grey;
-    background : none;
+    color: @white;
+    background : #23a1aa;
     &:hover {
-        border-color : @btnbackgroundcolor;
+        background : fade(#23a1aa, 80%);
     }
    &:active, &:focus {
         border-color: lighten(@btnbackgroundcolor, 1%);
@@ -121,6 +120,3 @@ background-color : darken(@btnbackgroundcolor, 2%);
     }
 }
 
-.btn--style-2 a{
-    background: #23a1aa;
-}
