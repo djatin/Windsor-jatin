@@ -68,12 +68,14 @@
 .menu{
     a, span{
         display: block;
-        padding: 0.25em;
+        padding: 0.25em 1em 0.45em;
         margin: 0 .75em 0 0;
         font-size: 1.07142857em;
         color: @menulinkcolor;
         text-decoration: none;
         border-bottom: 3px solid transparent;
+        //z-index: 455;
+        outline: 0;
         /*&:active, &:focus {
             outline: 0;
         }
@@ -90,6 +92,9 @@
         a, span{
             margin-right: 0;
         }
+    }
+    .menu a, .menu span{
+        text-transform: capitalize;
     }
 }
 

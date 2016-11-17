@@ -23,13 +23,14 @@
 // End panel dropdown menu  ========================
  //indicate there is a drop down when not all links have drop downs this happens at small sizes
 //so only in the panel context
-.panel .panel__link {
+.panel.expanded .panel__link {
+    padding-right: 1.5em;
     //1px/0.0625em
-    .min-width(0.0625em; {
+    .min-width(60em; {
         //padding-right: 1.5em; //specific to each implementaion
         position: relative;
         &:after {
-             display: none;  
+            display: block;  
             content:'';
             margin-top: -3px;
             //.milli (); //13px
@@ -37,14 +38,14 @@
             width: 0;
             .arrow-down();
             .arrow-sm();
-            border-top-color: @whiteonblack;
+            border-top-color: @menulinkcolor;
             position: absolute;
-            top: 50%;
-            right: 0.46153846153846em;
+            top: 45%;
+            right: 0.5em;
         }
         &:hover, &:active, &:focus, &.is-active {
             &:after {
-               border-top-color: @white; 
+               //border-top-color: fade(@menulinkcolor, 80%); 
             }
         }
     });

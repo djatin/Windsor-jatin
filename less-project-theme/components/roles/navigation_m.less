@@ -69,12 +69,13 @@
     
 .panel > .menu { 
     position: absolute;
-    top: 100%;
-    left: 1em;
+    top: 94%;
+    left: 0.3125em;
     right: 0;
     width: 100%;
     z-index: @zindex-nav;
     min-width: 22.5em;
+    padding-bottom: .5em;
 }
  
 // Coloring 
@@ -94,9 +95,9 @@
     }
     
 .menu__panel ul a {
-   color: @whiteonblack;
+   color: @white;
     &:hover {
-        color: @white;
+        color: @whiteonblack;
     }
 }  
     
@@ -119,6 +120,22 @@
     li:last-child:hover a, li:last-child.active-trail a{
         border-bottom-color: #a6dff6;
     }
+    li:first-child a.is-active{
+        background-color: #a5c243;
+        color: @white;
+    }
+    li:nth-child(2) a.is-active{
+        background-color: #c17eb7;
+        color: @white;
+    }
+    li:nth-child(3) a.is-active{
+        background-color: #e1d53e;
+        color: @white;
+    }
+    li:last-child a.is-active{
+        background-color: #a6dff6;
+        color: @white;
+    }
 }
     
 // utility navigation -------------------
@@ -139,7 +156,6 @@
 }*/
 // Submenu -------------------
 .menu .menu a {
-    padding: 0.25em 1em;
     margin: 0 !important;
     border-bottom: none;
 }
@@ -168,7 +184,7 @@
 .navigation__global-nav > .menu {
     li{
         a, span{
-            margin: 0 1.25em;
+            margin: 0;
             .min-width-max(60em{
                 margin: 0 .25em;
             }71.22em);
@@ -180,6 +196,41 @@
         }
     }
 }
+
+.panel > .menu{
+    .min-width(71.25em{
+        left: 0em;
+    });
+}
+
+.menu{
+    .min-width(71.875em{
+        a, span{
+            padding: 0.25em 1em 0.45em;
+        }
+        .menu a{
+            padding: 0.25em 1em .25em 1.2em;
+        }
+    });
+    .min-width-max(62.5em{
+        a, span{
+            padding: 0.25em .5em 0.45em;
+        }
+        .menu a{
+            padding: 0.25em 1em .25em .7em;
+        }
+    }71.865em);
+    .min-width-max(60em{
+        a, span{
+            padding: 0.25em .25em 0.45em;
+        }
+        .menu a{
+            padding: 0.25em 1em .25em .5em;
+        }
+    }62.49em);
+}
+
+
 // Media Queries for component in situ 
 // navigation menu --------------------------------
 
