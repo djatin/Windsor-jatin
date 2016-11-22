@@ -121,8 +121,17 @@
  
 
 // Component insitue
-.contentinfo .menu a {
-      color: @white;
+.contentinfo .menu {
+    a {
+        color: @white;
+        text-transform: uppercase;
+        &:hover{
+            color: fade(@white, 80%);    
+        }
+    }
+    .menu a{
+        text-transform: capitalize;
+    }
 }
 
 // utility navigation -------------------
