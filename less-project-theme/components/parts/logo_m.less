@@ -55,12 +55,15 @@
             background-image: url('../img/skin/logo/WLT_logo.png'); 
             background-repeat: no-repeat;
         });
-        .min-width(30em{
+        .min-width(63.75em{
             background-size: @siteLogoWidth @siteLogoHeight;
         });
+        .min-width-max(53.125em{
+            background-size: 15em 7.25em;
+        }63.749em);
         .min-width-max(0.1em{
             background-size: 12.313em 7.25em;
-        }29.999em);
+        }53.124em);
    }
     // if svg use the svg of the logo
     .svg .logo__link {
@@ -68,6 +71,9 @@
         .min-width(0.0625em; {
            background-image: url('../img/skin/logo/WLT_logo.svg'); 
         });
+    }
+    .svg .contentinfo .logo__link {
+           background-image: url('../img/skin/logo/logo_white.svg')
     }
     // dirty hack for opera mini as it doesn't handle svg background images well
     x:-o-prefocus, .svg .logo__link {

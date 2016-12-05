@@ -21,7 +21,7 @@
 
 
 // 768 major layout change to navigation ========================
-.min-width(60em; {
+.min-width(48em; {
 
 /* Menu toggle ---------------------------- */
 // this is the menu button to link to nav on very small devices or when there is no js on small devices
@@ -32,10 +32,10 @@
     
 // navigation (role='navigation' -----------------------------
 .navigation {
-        width: 100%;
-        position: absolute;
-        top: 8em;
-        z-index: @zindex-nav;
+    width: 100%;
+    position: absolute;
+    top: 8em;
+    z-index: @zindex-nav;
 }
     
 .navigation__wrapper {
@@ -70,7 +70,7 @@
 .panel > .menu { 
     position: absolute;
     top: 94%;
-    left: 0.3125em;
+    left: 0;
     right: 0;
     width: 100%;
     z-index: @zindex-nav;
@@ -107,7 +107,7 @@
 .navigation__global-nav > .menu {
     //.one-half();
     float: right;
-    margin-top: -4em;
+    margin-top: -3.6em;
     li:first-child:hover a, li:first-child.active-trail a{
         border-bottom-color: #a5c243;
     }
@@ -117,8 +117,11 @@
     li:nth-child(3):hover a, li:nth-child(3).active-trail a{
         border-bottom-color: #e1d53e;
     }
+    li:nth-child(4):hover a, li:nth-child(3).active-trail a{
+        border-bottom-color: #a3def2;
+    }
     li:last-child:hover a, li:last-child.active-trail a{
-        border-bottom-color: #a6dff6;
+        border-bottom-color: #8c61aa;
     }
     li:first-child a.is-active{
         background-color: #a5c243;
@@ -178,15 +181,15 @@
         font-weight: 600;
         font-size: 1.43357143em;         
     }
-}59.999em);
+}47.999em);
 
 
 .navigation__global-nav > .menu {
     li{
         a, span{
-            margin: 0;
-            .min-width-max(60em{
-                margin: 0 .25em;
+            margin: 0 .25em 0 0;
+            .min-width-max(48em{
+               // margin: 0 .25em;
             }71.22em);
         }
         &:last-child{
@@ -198,13 +201,13 @@
 }
 
 .panel > .menu{
-    .min-width(71.25em{
-        left: 0em;
-    });
+    .min-width-max(48em{
+        top: 100%;
+    }73.75em);
 }
 
 .menu{
-    .min-width(71.875em{
+    .min-width(73.75em{
         a, span{
             padding: 0.25em 1em 0.45em;
         }
@@ -212,22 +215,33 @@
             padding: 0.25em 1em .25em 1.2em;
         }
     });
-    .min-width-max(62.5em{
+    .min-width-max(68.75em{
         a, span{
             padding: 0.25em .5em 0.45em;
         }
         .menu a{
-            padding: 0.25em 1em .25em .7em;
+            padding: 0.25em 1em .25em .5em;
         }
-    }71.865em);
-    .min-width-max(60em{
+    }73.74em);
+    .min-width-max(48em{
         a, span{
             padding: 0.25em .25em 0.45em;
         }
         .menu a{
             padding: 0.25em 1em .25em .5em;
         }
-    }62.49em);
+    }73.739em);
+    .min-width-max(53.125em{
+        a, span{
+            font-size: 1.175em;
+        }
+    }73.739em);
+    .min-width-max(48em{
+        a, span{
+            font-size: 1.075em;
+            letter-spacing: 0.025em;
+        }
+    }53.124em);
 }
 
 
@@ -244,5 +258,9 @@
     }
 }
 
-
+.navigation{
+    .min-width-max(48em{
+        right: -3em;
+    }59.999em);
+}
 
